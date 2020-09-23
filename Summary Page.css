@@ -1,0 +1,280 @@
+/* CSS Document for Screens */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+body { font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 300; color: #555; margin: 0; padding: 0 0 0 20px; }
+
+#page{max-width: 1200px; margin: 0 auto; position: relative; }
+
+/* Text */
+
+h1{margin: 0 0 1em 0; font-size: 2.8em; font-weight: 700;}
+h2{margin: 0 0 .5em 0; font-size: 1.6em; font-weight: 700; line-height: 1.1em; }
+h3{margin: 0 0 .5em 0; font-size: 1.3em; font-weight: 700; }
+h4{margin: 0 0 1.5em 0; font-size: 1em; font-weight: 700; }
+
+p{margin: 0 0 1em 0; }
+
+a{color: #007eff;}
+a:visited {color: #65b1ff;}
+
+a.btn{font-size: 1.2em; text-decoration: none; color: #fff; border: 1px solid #fff; padding: 4px 15px; transition: background-color .5s;}
+a.btn:hover{background-color: rgba(0,0,0,.3);}
+
+/* Header aka Summary Page */
+
+h1 {
+float:left;
+color: white;
+
+    font-size: 42pt;}
+
+header div.hero{position: absolute; width: 42%; top: 20px; left: 30%;}
+header div.hero h1 {line-height: 1em; margin: 0 0 30px 0; color: #fff}
+
+section.main aside .Summary{padding: 200px 30px 20px 0;}
+
+
+/* Profile Pic */
+
+header a.ProfilePic{
+    z-index: 1;
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 160px; background:
+    url(../responsiveweb/ProfilePic.jfif) no-repeat 0px 0px; background-size: contain;
+    top: 10px; right: 0px;
+    border-radius: 50%;
+}
+
+
+/* Logo */
+
+
+header a.logo{
+    z-index: 1;
+    position: absolute;
+    display:block;
+    width: 160px; height: 160px;
+    background: url(../responsiveweb/logo.png) no-repeat 0px 0px; background-size: contain;
+    top: 0px; left: -10px;
+}
+header a.logo span {display:none;}
+
+    
+/* Contact Page */
+
+p {
+
+color: white;
+
+font-size: 12pt;
+
+<h1 style="font-family:arial;">
+
+}
+
+td {
+	text-align: left;
+}
+
+th {
+	text-align: left;
+}
+
+table, th, td {
+  border: 1px solid white;
+}
+
+    
+body {
+font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 300; color: #555; margin: 0; padding: 0;
+
+/* Background Wallpaper */
+background-image: url(HexagonBackground.jpg);
+background-repeat: no-repeat;
+background-size: 400%;
+}
+
+body2 {
+
+background-image: url(ThankYou.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
+}
+
+li {
+
+color: white;
+
+font-size: 12pt;
+
+}
+
+form {
+color: white;
+font-size: 12pt;
+}
+
+h2 {
+
+color: white;
+
+font-size: 25pt;
+
+}
+
+h3 {
+
+color: white;
+
+font-size: 15pt;
+
+}
+
+  /* Navigation */
+
+
+nav {
+    position: absolute;
+    top: 65px; left: 260px;
+    padding: 50px 0 0 0;
+    width: 100%;
+}
+
+nav::after {content: ''; display: block; clear: both;}
+
+nav ul {list-style: none; margin: 0; padding: 0px; }
+
+nav ul li:hover {background-color: #2b0306; }
+
+nav ul li a {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 125px;
+    position: relative;
+    font-weight: bold;
+}
+
+nav ul li a:visited {color: #fff; }
+
+nav ul li a:hover {background-color: #6d0911; }
+nav ul li a:hover > ul {display: block; }
+
+
+nav ul ul {position: absolute; top: 100%; background-color: #2b0306; display: none;}
+
+nav ul ul li {position: relative; }
+
+nav ul ul ul {left: 100%, top: 0px; }
+
+
+/* top-level */
+
+nav > ul {padding-left: 200px; }
+
+nav > ul > li {float: left; }
+
+nav > ul > li > a {width: auto; padding: 10px 20px 15px 20px; }
+
+
+nav a[aria-haspopup="true"]::after{
+    content: '';
+    display: block; width: 0px; height: 0px;
+    position: absolute;
+    top: 16px; right: 15px; 
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #fff; 
+}
+
+nav > ul > li > a[aria-haspopup="true"]::after {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #fff;
+    left: 20px; right: auto;
+    bottom: 6px; top: auto;
+}
+
+
+
+/* Removing bullet points from navigation */
+
+nav ul {
+    list-style-type: none; margin: 0; padding: 0px
+    }
+
+
+/* Summary Page - Footer */
+
+footer p {
+
+color: white;
+
+font-size: 10pt;
+
+}
+
+/* Summary Page - Profile Pic */
+img  {
+  float: right;
+}
+
+/* Media Queries */
+
+/* 1000px */
+@media screen and (max-width: 1000px) {
+    
+    /* Header */
+    h1 { font-size: 2.4em;
+         right: 200px;
+        left: 10px
+    }
+    
+    /* ProfilePic */
+    
+    header a.ProfilePic{
+    z-index: 1;
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px; background:
+    url(../responsiveweb/ProfilePic.jfif) no-repeat 0px 0px; background-size: contain;
+        top: 10px; right: 10px;
+
+        
+    }
+    
+    
+
+/* 825px */
+@media screen and (max-width: 825px) {
+    section.main aside .Summary p{font-size: .85em}
+    footer p {color: white;
+          font-size: .70em}
+    }
+    
+    nav {
+    position: absolute;
+    top: 95px; left: 75px;
+    padding: 50px 0 0 0;
+    width: 100%;
+}
+    
+/* 625px */
+    
+
+@media screen and (max-width: 625px) {
+   h1 { font-size: 1.8em;
+         right: 200px;
+    }
+     
+
+nav {position: static; width: auto; padding: 150px 350px 0 0; margin-bottom: 30px; margin-top: 20px; background-color:black; float: left;}
+}
+
+    
+}
